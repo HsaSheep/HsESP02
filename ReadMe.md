@@ -9,7 +9,7 @@ I am assuming to use on a solderless breadboard.
 
 ---
 
-|![Top View(image)](/doc/esp-wroom-02_BO_top.PNG)|![Bottom View(image)](/doc/esp-wroom-02_BO_bottom.PNG)|
+| ![Top View(image)](/doc/esp-wroom-02_BO_top.PNG) | ![Bottom View(image)](/doc/esp-wroom-02_BO_bottom.PNG) |  
 
 ---
   

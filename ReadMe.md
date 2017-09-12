@@ -1,7 +1,5 @@
 [schema](ESP-WROOM-02_BreakOut)
 
-# Read Me. #
-
 ### About repo. ###
   
   
@@ -9,6 +7,18 @@ This repository converts "ESP-WROOM-02" module to 2.54 mm pitch.
 I am assuming to use on a solderless breadboard.
 
 ---
+
+##### V3 #####
+
+![Top View(image)](/doc/HsESP02-V3_Top.PNG) ![Bottom View(image)](/doc/HsESP02-V3_Bottom.PNG)  
+<!--
+
+[schema]
+-->
+
+---
+
+##### V2 #####
 
 ![Top View(image)](/doc/esp-wroom-02_BO_top.PNG) ![Bottom View(image)](/doc/esp-wroom-02_BO_bottom.PNG)  
 <!--

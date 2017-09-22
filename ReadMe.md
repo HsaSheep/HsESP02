@@ -8,11 +8,20 @@ I am assuming to use on a solderless breadboard.
 
 ---
 
+##### V4 #####
+<!--
+![Top View(image)](/doc/HsESP02-V3_Top.PNG) ![Bottom View(image)](/doc/HsESP02-V3_Bottom.PNG)
+-->
+<!--
+[schema]
+-->
+--
+
 ##### V3 #####
 
-![Top View(image)](/doc/HsESP02-V3_Top.PNG) ![Bottom View(image)](/doc/HsESP02-V3_Bottom.PNG)  
-<!--
+![Top View(image)](/doc/HsESP02-V3_Top.PNG) ![Bottom View(image)](/doc/HsESP02-V3_Bottom.PNG)  
 
+<!--
 [schema]
 -->
 
@@ -20,9 +29,9 @@ I am assuming to use on a solderless breadboard.
 
 ##### V2 #####
 
-![Top View(image)](/doc/esp-wroom-02_BO_top.PNG) ![Bottom View(image)](/doc/esp-wroom-02_BO_bottom.PNG)  
-<!--
+![Top View(image)](/doc/esp-wroom-02_BO_top.PNG) ![Bottom View(image)](/doc/esp-wroom-02_BO_bottom.PNG)  
 
+<!--
 [schema]
 -->
 

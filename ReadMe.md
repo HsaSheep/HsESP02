@@ -11,7 +11,7 @@ I am assuming to use on a solderless breadboard.
 
 #### V4 ####
 
-Memo : V4はサンプル画像と作者の実物でいくつかの変更点が含まれていますが、回路的変更はありません。<br>
+Memo : V4はサンプル画像と作者の実物でいくつかの変更点が含まれていますが、回路な変更はありません。<br>
 　　　　Sillk等にいくつかの軽微な修正が含まれています。また、それに伴いBuildDataが更新されています。
 
 <table>
@@ -77,10 +77,10 @@ Memo : V4はサンプル画像と作者の実物でいくつかの変更点が�
   
 ## This Repo... Empty??? ##
   
-~~I am currently manufacturing the board.
-- All files are added as soon as normal operation can be confirmed. -~~
+~~I am currently manufacturing the board.~~
+~~All files are added as soon as normal operation can be confirmed.~~
 
-~~- (I am waiting for luggage from Elecrow.)~~
+~~(I am waiting for luggage from Elecrow.)~~
 
 ## 疲れたので日本語で追記します。 ##
 
@@ -103,14 +103,17 @@ Elecrowが中国の１０月の国のお休み的なやつ（国慶節）から�
 利用は自由ですし、改変も問題ないと思います。むしろ、自分も他人様のライブラリを引っ張ってきて作っている身です。
 
 もし、Elecrow等にガーバーぶん投げるついでに、BreakOut基板も投げたいけど作るのだるいなーって感じだった時は、一応、このデータで作れているので一緒に出すと現時点では5枚600~700円程度で作れますので割と安価だと思います。
+
 ~~もっとよくできたのが転がってそうな気がしますが…~~
 
 ガーバーデータはKiCadフォルダ内のG_Silks_v*.zipです。基本的に数字は製作した順ですので、複数ある場合は最新を見てもらえると良いかと。
 いらなくなったら最新残して消します。
+
 一方、プロジェクトファイル自体はそのまま更新しています。内部的にはzipを弾いてGit管理しているので…。
 
 あ、あと、世間がWiFiのセキュリティで騒いでいますね。クラックとかなんとか…
 FWのアップデートがあるようなので、組み立て後にアップデートして見るのも良いかと。
+
 その際だけはWindowsマシンがあると楽かもしれません…(実体験)
 
 ##  ファイルについて ##

@@ -14,7 +14,16 @@ I am assuming to use on a solderless breadboard.
 Memo : V4はサンプル画像と作者の実物でいくつかの変更点が含まれていますが、回路的変更はありません。
              Sillk等にいくつかの軽微な修正が含まれています。また、それに伴いBuildDataが更新されています。
 
-|![Top View(image)](/doc/HsESP02-V4_Top.png)|![Bottom View(image)](/doc/HsESP02-V4_Bottom.png)|
+<table>
+    <tr>
+        <td>
+            <img src="/doc/HsESP02-V4_Top.png" alt="Top View(image)" width="320px">
+        </td>
+        <td>
+            <img src="/doc/HsESP02-V4_Bottom.png" alt="Bottom View(image)" width="320px">
+        </td>
+    </tr>
+</table>
 
 <!--
 [schema]
@@ -22,9 +31,21 @@ Memo : V4はサンプル画像と作者の実物でいくつかの変更点が�
 
 ---
 
+<details>
+<summary>Old Version...</summary>
+
 #### V3 ####
 
-|![Top View(image)](/doc/HsESP02-V3_Top.png)|![Bottom View(image)](/doc/HsESP02-V3_Bottom.png)|
+<table>
+    <tr>
+        <td>
+            <img src="/doc/HsESP02-V3_Top.png" alt="Top View(image)" width="320px">
+        </td>
+        <td>
+            <img src="/doc/HsESP02-V3_Bottom.png" alt="Bottom View(image)" width="320px">
+        </td>
+    </tr>
+</table>
 
 <!--
 [schema]
@@ -34,11 +55,22 @@ Memo : V4はサンプル画像と作者の実物でいくつかの変更点が�
 
 #### V2 ####
 
-|![Top View(image)](/doc/esp-wroom-02_BO_top.png)|![Bottom View(image)](/doc/esp-wroom-02_BO_bottom.png)|
+<table>
+    <tr>
+        <td>
+            <img src="/doc/esp-wroom-02_BO_top.png" alt="Top View(image)" width="320px">
+        </td>
+        <td>
+            <img src="/doc/esp-wroom-02_BO_bottom.png" alt="Bottom View(image)" width="320px">
+        </td>
+    </tr>
+</table>
 
 <!--
 [schema]
 -->
+
+</details>
 
 ---
   

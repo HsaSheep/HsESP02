@@ -14,7 +14,7 @@ I am assuming to use on a solderless breadboard.
 Memo : V4はサンプル画像と作者の実物でいくつかの変更点が含まれていますが、回路的変更はありません。
              Sillk等にいくつかの軽微な修正が含まれています。また、それに伴いBuildDataが更新されています。
 
-![Top View(image)](/doc/HsESP02-V4_Top.PNG) ![Bottom View(image)](/doc/HsESP02-V4_Bottom.PNG)
+![Top View(image)](/doc/HsESP02-V4_Top.png) ![Bottom View(image)](/doc/HsESP02-V4_Bottom.png)
 
 <!--
 [schema]
@@ -24,7 +24,7 @@ Memo : V4はサンプル画像と作者の実物でいくつかの変更点が�
 
 #### V3 ####
 
-![Top View(image)](/doc/HsESP02-V3_Top.PNG) ![Bottom View(image)](/doc/HsESP02-V3_Bottom.PNG)  
+![Top View(image)](/doc/HsESP02-V3_Top.png) ![Bottom View(image)](/doc/HsESP02-V3_Bottom.png)
 
 <!--
 [schema]
@@ -34,7 +34,7 @@ Memo : V4はサンプル画像と作者の実物でいくつかの変更点が�
 
 #### V2 ####
 
-![Top View(image)](/doc/esp-wroom-02_BO_top.PNG) ![Bottom View(image)](/doc/esp-wroom-02_BO_bottom.PNG)  
+![Top View(image)](/doc/esp-wroom-02_BO_top.png) ![Bottom View(image)](/doc/esp-wroom-02_BO_bottom.png)
 
 <!--
 [schema]

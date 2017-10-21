@@ -1,0 +1,9 @@
+(fp_lib_table
+  (lib (name nosuz)(type KiCad)(uri "$(KIPRJMOD)/nosuz.pretty")(options "")(descr ""))
+  (lib (name NJM2845)(type KiCad)(uri "$(KIPRJMOD)/NJM2845.pretty")(options "")(descr ""))
+  (lib (name wroom-02)(type KiCad)(uri "$(KIPRJMOD)/wroom-02.pretty")(options "")(descr ""))
+  (lib (name HsMouse)(type KiCad)(uri "$(KIPRJMOD)/HsMouse.pretty")(options "")(descr ""))
+  (lib (name conn-test)(type KiCad)(uri "$(KIPRJMOD)/conn-test.pretty")(options "")(descr ""))
+  (lib (name Logo)(type KiCad)(uri "$(KIPRJMOD)/Logo.pretty")(options "")(descr ""))
+  (lib (name HsESP02)(type KiCad)(uri "$(KIPRJMOD)/HsESP02.pretty")(options "")(descr ""))
+)

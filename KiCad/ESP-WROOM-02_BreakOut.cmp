@@ -1,0 +1,179 @@
+Cmp-Mod V01 Created by PcbNew   date = 2017/09/12 23:47:32
+
+BeginCmp
+TimeStamp = 59A40B59
+Path = /59A409C7
+Reference = D1;
+ValeurCmp = CRD_18mA;
+IdModule  = Diodes_SMD:D_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40B5F
+Path = /59A409B7
+Reference = D2;
+ValeurCmp = CRD_18mA;
+IdModule  = Diodes_SMD:D_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40B73
+Path = /59A409C8
+Reference = LED1;
+ValeurCmp = LED_GREEN;
+IdModule  = LEDs:LED_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40B79
+Path = /59A409B8
+Reference = LED2;
+ValeurCmp = LED_BLUE;
+IdModule  = LEDs:LED_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40B7F
+Path = /59A409BB
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0603_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40B85
+Path = /59A409C0
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0603_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40B8B
+Path = /59A409C3
+Reference = R3;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0603_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40B91
+Path = /59A409C4
+Reference = R4;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0603_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40B97
+Path = /59A409C5
+Reference = R5;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0603_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40B9D
+Path = /59A409CD
+Reference = R6;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0603_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40BC0
+Path = /59A409B6
+Reference = U1;
+ValeurCmp = NJM2845DL1;
+IdModule  = NJM2845:NJM2845;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40BD6
+Path = /59A409B3
+Reference = U2;
+ValeurCmp = WROOM-02;
+IdModule  = wroom-02:WROOM-02;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A411F5
+Path = /59A41135
+Reference = J4;
+ValeurCmp = CONN_01X09;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A5AC40
+Path = /59A5C7D3
+Reference = J1;
+ValeurCmp = IO13_Jump;
+IdModule  = conn-test:JUMPER-SOLDER-3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A5AD4F
+Path = /59A4140E
+Reference = J2;
+ValeurCmp = CONN_01X09;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x09_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A5AD5B
+Path = /59A5CCC4
+Reference = J3;
+ValeurCmp = IO12_Jump;
+IdModule  = conn-test:JUMPER-SOLDER-3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A5BCE3
+Path = /59A409B4
+Reference = SW3;
+ValeurCmp = SW_SPDT_WROOM-02_POWER;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A5BE56
+Path = /59A409CA
+Reference = J5;
+ValeurCmp = CONN_01X04;
+IdModule  = Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A6EA97
+Path = 
+Reference = REF***;
+ValeurCmp = OSHW-Symbol_6.7x6mm_SilkScreen;
+IdModule  = Symbols:OSHW-Symbol_6.7x6mm_SilkScreen;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40BB9
+Path = /59A409CE
+Reference = SW4;
+ValeurCmp = SW_Push_GPIO12;
+IdModule  = HsMouse:SW_DIP_x1_W7.62mm_Slide_MOD_TVBP06-B043C_0.8x1.2_noSilks;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40BA3
+Path = /59A409BE
+Reference = SW1;
+ValeurCmp = SW_Push_BOOT0;
+IdModule  = HsMouse:SW_DIP_x1_W7.62mm_Slide_MOD_TVBP06-B043C_0.8x1.2_noSilks;
+EndCmp
+
+BeginCmp
+TimeStamp = 59A40BA9
+Path = /59A409C1
+Reference = SW2;
+ValeurCmp = SW_Push_RESET;
+IdModule  = HsMouse:SW_DIP_x1_W7.62mm_Slide_MOD_TVBP06-B043C_0.8x1.2_noSilks;
+EndCmp
+
+EndListe

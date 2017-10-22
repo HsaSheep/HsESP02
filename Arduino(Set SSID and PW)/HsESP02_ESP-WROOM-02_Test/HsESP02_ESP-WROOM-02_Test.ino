@@ -19,6 +19,8 @@ const char* password = "xic7b5dfx3x8k";
 
 ESP8266WebServer server(80);
 
+#define INCOMING_SIZE (5000)
+
 const int led = 13;
 const int beep_pin =  16;
 
@@ -53,9 +55,22 @@ char* mac_return(void)
   return buff;
 }
 
+char incomingChar[INCOMING_SIZE]={};
+int incomingCount = 0;
+
+void incoming_Clear(void)
+{
+  for(incomingCount=0; incomingCount<INCOMING_SIZE; incomingCount++)
+  {
+    incomingChar[incomingCount] = 0;
+  }
+  incomingCount = 0;
+}
+
 void handleRoot() {
   digitalWrite(led, 1);
-  server.send(200, "text/plain", "hello from esp8266!");
+  if(incomingCount == 0) server.send(200, "text/html", "hello from esp8266!</br></br>No Serial Recived(Cleared)...</br>");
+  else server.send(200, "text/plain", incomingChar);
   digitalWrite(led, 0);
 }
 
@@ -86,7 +101,7 @@ void setup(void){
   beep(50);
   Serial.begin(115200);
   Serial.println("");
-  Serial.println("---- Booting... ---");
+  Serial.println("----- Booting... -----");
   Serial.println("----- Serial Begin -----");
   Serial.print("  Mac Addr: ");
   Serial.println(mac_return());
@@ -155,12 +170,12 @@ void setup(void){
 // ピン設定
   
   digitalWrite(led,1);
-  Serial.println("");
   Serial.println("----- WiFi Connected! -----");
   Serial.print(" Connected: ");
   Serial.println(ssid);
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
+  Serial.println("---------------------------");
   tone_(262,500);
   tone_(523,500);
 
@@ -178,6 +193,33 @@ void setup(void){
 
   server.onNotFound(handleNotFound);
 
+  server.on("/serial", [](){
+
+    server.send(200, "text/plain", incomingChar);
+    // 「/」に転送
+    //server.sendHeader("Location", String("/"), true);
+    //server.send(302, "text/plain", "");
+
+    Serial.println("----- incomingChar -----");
+    for(int i=0;i<incomingCount;i++)
+    {
+      if((incomingChar[i] == 0x0A) || (incomingChar[i]) == 0x0D)
+       Serial.println("");
+      else
+        Serial.print(incomingChar[i]);
+    }
+    Serial.println("");
+    Serial.println("----- incomingByte -----");
+    for(int i=0;i<incomingCount;i++)
+    {
+        Serial.print("[0x");
+        Serial.print((byte)(incomingChar[i]));
+        Serial.print("]");
+    }
+    Serial.println("");
+    Serial.println("----- incoming Print END -----");
+  });
+
   server.begin();
   Serial.println("HTTP server started");
   tone_(2093,500);
@@ -186,15 +228,43 @@ void setup(void){
   Serial.println("----- !!! StartUp Done !!! -----");
 }
 
-
 void loop(void){
   ArduinoOTA.handle(); // OTA
   server.handleClient();
-  if(digitalRead(12) == LOW)
-  {
-    tone_(2093,150);
-    tone_(4186,300);
 
+  if(Serial.available() > 0)
+  {
+    if((incomingCount+Serial.available()) > INCOMING_SIZE)
+    {
+      Serial.println("Incoming Data Buffar Overed. Clear...");
+      incoming_Clear();
+     }
+    else
+    {
+      while(Serial.available() > 0)
+      {
+        byte buff = Serial.read();
+        if(0)
+        {
+          Serial.print("Char:");
+          Serial.print((char)buff);
+          Serial.print("| Byte:");
+          Serial.println(buff);
+        }
+        //if(buff == '\c') incoming_Clear();
+        if(buff == '\c') buff = ' ';
+        else if(buff == '\0') buff = ' ';
+        //else if(buff == 0x0D) buff = ' ';
+        //else if(buff == 0x0A) buff = ' ';
+        else incomingChar[incomingCount] = (char)(buff);
+        
+        incomingCount++;
+      }
+    }
+  }
+  
+  if(digitalRead(12)  == LOW)
+  {
     Serial.println("");
     Serial.println("---------- ReSendStatus ----------");
     Serial.print("  Mac Addr: ");
@@ -203,5 +273,14 @@ void loop(void){
     Serial.println(ssid);
     Serial.print("IP address: ");
     Serial.println(WiFi.localIP());
+    tone_(2093,150);
+    tone_(4186,300);
+  }
+  else if(digitalRead(0) == LOW)
+  {
+    incoming_Clear();
+    tone_(4000,50);
+    tone_(8000,50);
+    tone_(4000,50);
   }
 }

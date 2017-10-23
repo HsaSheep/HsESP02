@@ -87,6 +87,17 @@ Memo : V4はサンプル画像と作者の実物でいくつかの変更点が�
 Elecrowが中国の１０月の国のお休み的なやつ（国慶節）から帰ってきてくれたので
 、頼んでいた基板が（かなり遅れて）到着し、現品を確認できました。
 
+<table>
+    <tr>
+        <td>
+            <img src="https://pbs.twimg.com/media/DMmNImkV4AAFdXv.jpg" alt="基板(右側)(image)" width="320px">
+        </td>
+        <td>
+            <img src="https://pbs.twimg.com/media/DMqHTEWVoAAIX9F.jpg" alt="実装した(image)" width="320px">
+        </td>
+    </tr>
+</table>
+
 難しい部分を極力省いて、比較的小型で最小限の機能のブレークアウト基板を開発することが目的でしたので、
 回路的に動作しない等のエラーはありませんでした。
 そもそもAutoRoutingも使ってるので、失敗する要素が少ないんですが、やっぱり不安でして。

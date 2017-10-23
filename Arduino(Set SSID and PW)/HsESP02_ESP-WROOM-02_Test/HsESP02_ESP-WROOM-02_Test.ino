@@ -70,7 +70,7 @@ void incoming_Clear(void)
 void handleRoot() {
   digitalWrite(led, 1);
   if(incomingCount == 0) server.send(200, "text/html", "hello from esp8266!</br></br>No Serial Recived(Cleared)...</br>");
-  else server.send(200, "text/plain", incomingChar);
+  else server.send(200, "text/html", (char)("<pre>"+incomingChar+"</pre>"));
   digitalWrite(led, 0);
 }
 

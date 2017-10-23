@@ -7,8 +7,8 @@
 //#define SSID_DEFINE ()
 //#define WIFI_PASSWD_DEFINE ()
 
-const char* ssid = "SSID_DEFINE";
-const char* password = "WIFI_PASSWD_DEFINE";
+const char* ssid = SSID_DEFINE;
+const char* password = WIFI_PASSWD_DEFINE;
 
 const int led = 13;
 const int beep_pin =  16;
@@ -47,6 +47,8 @@ void setup() {
   Serial.print("  Mac Addr: ");
   Serial.println(buff);
   Serial.println(" !Enable OTA(BASIC_MODE)!");
+  Serial.print("Connect to ");
+  Serial.println(ssid);
   WiFi.mode(WIFI_STA); // OTA
   WiFi.begin(ssid, password);
   Serial.println("----- WiFi Connect wait... -----");

@@ -3,11 +3,12 @@
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
 
-//const char* ssid = "WiFi-SSID";
-//const char* password = "WiFi-Password";
+#include "WIFI_SETTING.h"
+//#define SSID_DEFINE ()
+//#define WIFI_PASSWD_DEFINE ()
 
-const char* ssid = "Buffalo-G-1D7A-Hs";
-const char* password = "xic7b5dfx3x8k";
+const char* ssid = "SSID_DEFINE";
+const char* password = "WIFI_PASSWD_DEFINE";
 
 const int led = 13;
 const int beep_pin =  16;

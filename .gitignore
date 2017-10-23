@@ -19,3 +19,7 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
+
+# Arduino Sketch Files
+# Password File
+WIFI_SETTING.h

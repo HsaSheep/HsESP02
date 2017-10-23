@@ -11,11 +11,13 @@
 #include <WiFiUdp.h>     //OTA
 #include <ArduinoOTA.h>  //OTA
 
-//const char* ssid = "WiFi-SSID";
-//const char* password = "WiFi-Password";
+#include "WIFI_SETTING.h"
+//#define SSID_DEFINE ()
+//#define WIFI_PASSWD_DEFINE ()
 
-const char* ssid = "Buffalo-G-1D7A-Hs";
-const char* password = "xic7b5dfx3x8k";
+
+const char* ssid = "SSID_DEFINE";
+const char* password = "WIFI_PASSWD_DEFINE";
 
 ESP8266WebServer server(80);
 
@@ -70,7 +72,7 @@ void incoming_Clear(void)
 void handleRoot() {
   digitalWrite(led, 1);
   if(incomingCount == 0) server.send(200, "text/html", "hello from esp8266!</br></br>No Serial Recived(Cleared)...</br>");
-  else server.send(200, "text/html", (char)("<pre>"+incomingChar+"</pre>"));
+  else server.send(200, "text/plain", incomingChar);
   digitalWrite(led, 0);
 }
 

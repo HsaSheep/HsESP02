@@ -11,7 +11,8 @@
 #include <WiFiUdp.h>     //OTA
 #include <ArduinoOTA.h>  //OTA
 
-#include "WIFI_SETTING.h"
+// in ~/Arduino/librarys/***/WIFI_SETTING.h
+#include <WIFI_SETTING.h>
 //#define SSID_DEFINE ()
 //#define WIFI_PASSWD_DEFINE ()
 
@@ -171,6 +172,22 @@ void setup(void){
 // ------------------------------------ //
 
 // ピン設定
+  //i2c  SDA:IO4 SCL:IO14
+  Wire.begin(4, 14);
+  delay(40);
+
+  // MPU6050 SETTING
+  uint8_t cmd_init[] = {0x38, 0x39, 0x14, 0x70, 0x56, 0x6c, 0x38, 0x0d, 0x01};
+  command(cmd_init, sizeof(cmd_init));
+  delayMicroseconds(1080);  // 1.08ms
+
+  uint8_t cmd_str1[] = {0x48, 0x65, 0x6c, 0x6c, 0x6f};
+  uint8_t cmd_cr[] = {0xc0};
+  uint8_t cmd_str2[] = {0x57, 0x6f, 0x72, 0x6c, 0x64, 0x21};
+  write(cmd_str1, sizeof(cmd_str1));
+  command(cmd_cr, sizeof(cmd_cr));
+  write(cmd_str2, sizeof(cmd_str2));
+  // MPU6050 SETTING END
   
   digitalWrite(led,1);
   Serial.println("----- WiFi Connected! -----");

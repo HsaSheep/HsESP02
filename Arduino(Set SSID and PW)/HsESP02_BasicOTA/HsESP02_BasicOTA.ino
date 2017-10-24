@@ -3,7 +3,8 @@
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
 
-#include "WIFI_SETTING.h"
+// in ~/Arduino/librarys/***/WIFI_SETTING.h
+#include <WIFI_SETTING.h>
 //#define SSID_DEFINE ()
 //#define WIFI_PASSWD_DEFINE ()
 
